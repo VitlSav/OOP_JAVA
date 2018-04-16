@@ -1,4 +1,23 @@
-System.out.println (text);
+package ua.lpnuai.savchyn7;
+
+import java.util.*;
+
+public class Lab_8 {
+
+	public static void main(String[] args) {
+		
+		Scanner scn = new Scanner(System.in);
+		System.out.println("Enter the text:");
+		String text = scn.nextLine();
+		int leng;
+		do {
+		    System.out.println("length of the word:");
+		    leng = scn.nextInt();
+		}
+		while(leng <= 0 && leng > 500);
+		
+		System.out.print("Your text:  ");
+		System.out.println (text);
 		System.out.print ("Result:  ");
 		
 		char txt[] = text.toCharArray();
